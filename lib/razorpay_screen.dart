@@ -79,18 +79,18 @@ class _RazorpayScreenState extends State<RazorpayScreen> {
         child: Column(
           children: [
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.1,
+              height: MediaQuery.of(context).size.height * 0.15,
             ),
             Image.network(
               'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj5NIBek3gFKtIxx-wk0Ruf3Q4Z8XAgctk1pyi3EFanuuNUjVRVhTWPNduILwQ2tvZfls&usqp=CAU',
-              height: MediaQuery.of(context).size.height * 0.08,
-              width: MediaQuery.of(context).size.width * 0.75,
+              height: MediaQuery.of(context).size.height * 0.2,
+              width: MediaQuery.of(context).size.width * 0.9,
             ),
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.03,
             ),
             Padding(
-              padding: const EdgeInsets.all(8),
+              padding: const EdgeInsets.symmetric(vertical: 10,horizontal: 20),
               child: TextFormField(
                 controller: amtController,
                 cursorColor: Colors.white,
@@ -129,7 +129,7 @@ class _RazorpayScreenState extends State<RazorpayScreen> {
               style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
               child: const Padding(
                 padding: EdgeInsets.all(8),
-                child: Text('Make Payment'),
+                child: Text('Make Payment',style: TextStyle(color: Colors.white),),
               ),
             ),
           ],
